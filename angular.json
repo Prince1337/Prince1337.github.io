@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/Prince1337.github.io/",
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
