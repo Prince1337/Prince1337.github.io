@@ -1,1 +1,118 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #041C1B;
+    --dark-green: #344E41;
+    --light-green: #588157;
+    --text-light: #DAD7CD;
+    --text-dark: #344E41;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+
+
+/* Allgemeine Resets und Grundstile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Überschriften */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+/* Buttons */
+button {
+    background-color: var(--dark-green);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+button:disabled {
+    background-color: #d1d1d6;
+    color: #8e8e93;
+    cursor: not-allowed;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--light-green);
+}
+
+/* Listen */
+ul,
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Formulare */
+input,
+textarea {
+    border: 1px solid #c7c7cc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+/* Karten */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 16px 0;
+}
+
+/* Bilder */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Transitionen für sanfte Effekte */
+*,
+*::before,
+*::after {
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}

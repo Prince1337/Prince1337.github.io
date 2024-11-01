@@ -1,0 +1,15 @@
+.hero {
+    height: 100vh;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#profile-picture {
+    border-radius: 50%;
+
+}
