@@ -36,10 +36,10 @@ h6 {
 
 /* Buttons */
 button {
-    background-color: var(--dark-green);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
+    background: var(--light-green);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
@@ -48,7 +48,8 @@ button {
 }
 
 button:hover {
-    background-color: #005bb5;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 
 button:disabled {
@@ -96,11 +97,20 @@ textarea:focus {
 
 /* Karten */
 .card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 16px 0;
+    background: var(--light-green);
+    border-radius: 30%;
+    box-shadow:
+        5px 5px 18px var(--light-green),
+        12px 12px 24px var(--dark-green),
+        inset -24px -24px 48px var(--dark-green),
+        inset 6px 6px 24px rgb(175, 211, 208);
+    border: none;
+    color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 
 /* Bilder */
